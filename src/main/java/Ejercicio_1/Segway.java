@@ -13,4 +13,9 @@ public class Segway extends BiciAutonomia{
         super(marca, modelo, fechaCompra, autonomia, 18.90);
         this.alturaMinima = alturaMinima;
     }
+
+    @Override
+    public String toString() {
+        return "Segway " + super.toString() + " " + alturaMinima + " cm de altura mínima\t" + precio + "€/h";
+    }
 }

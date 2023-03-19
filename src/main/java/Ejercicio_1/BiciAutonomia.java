@@ -12,4 +12,9 @@ public abstract class BiciAutonomia extends Bici{
         super(marca, modelo, fechaCompra, precio);
         this.autonomia = autonomia;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " " + autonomia + " km de autonomía";
+    }
 }

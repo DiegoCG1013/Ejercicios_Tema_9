@@ -8,7 +8,7 @@ public abstract class Bici {
     private String marca;
     private String modelo;
     private LocalTime fechaCompra;
-    private final double precio;
+    protected final double precio;
 
     //Constructor
     public Bici(String marca, String modelo, LocalTime fechaCompra, double precio) {
@@ -20,5 +20,10 @@ public abstract class Bici {
 
     public double alquilar(int horas){
         return horas * precio;
+    }
+
+    @Override
+    public String toString() {
+        return marca + " " + modelo + " (" + fechaCompra + ") ";
     }
 }

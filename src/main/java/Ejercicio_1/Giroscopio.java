@@ -8,4 +8,9 @@ public class Giroscopio extends BiciAutonomia{
     public Giroscopio(String marca, String modelo, LocalTime fechaCompra, int autonomia) {
         super(marca, modelo, fechaCompra, autonomia, 29.90);
     }
+
+    @Override
+    public String toString() {
+        return "Giroscopio " + super.toString() + "\t" + precio + "€/h";
+    }
 }

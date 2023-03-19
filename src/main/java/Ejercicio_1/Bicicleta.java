@@ -12,4 +12,9 @@ public class Bicicleta extends Bici{
         super(marca, modelo, fechaCompra, 4.90);
         this.velocidades = velocidades;
     }
+
+    @Override
+    public String toString() {
+        return "Bici " + super.toString() + " " + velocidades + " velocidades\t" + precio + "€/h";
+    }
 }
