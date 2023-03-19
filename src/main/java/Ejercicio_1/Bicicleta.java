@@ -9,7 +9,7 @@ public class Bicicleta extends Bici{
 
     //Constructor
     public Bicicleta(String marca, String modelo, LocalTime fechaCompra, int velocidades) {
-        super(marca, modelo, fechaCompra);
+        super(marca, modelo, fechaCompra, 4.90);
         this.velocidades = velocidades;
     }
 }

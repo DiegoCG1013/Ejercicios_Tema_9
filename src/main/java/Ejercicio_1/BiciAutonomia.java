@@ -8,8 +8,8 @@ public abstract class BiciAutonomia extends Bici{
     private int autonomia;
 
     //Constructor
-    public BiciAutonomia(String marca, String modelo, LocalTime fechaCompra, int autonomia) {
-        super(marca, modelo, fechaCompra);
+    public BiciAutonomia(String marca, String modelo, LocalTime fechaCompra, int autonomia, double precio) {
+        super(marca, modelo, fechaCompra, precio);
         this.autonomia = autonomia;
     }
 }
